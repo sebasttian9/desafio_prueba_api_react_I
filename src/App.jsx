@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import MiApi from './components/MiApi'
-// import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   
+  const [libroBuscar, setLibroBuscar] = useState('Javascript');
 
   return (
-    <>
-      <MiApi/>
-    </>
+    <div className='container'>
+      <MiApi libroBuscar={libroBuscar}/>
+    </div>
   )
 }
 
