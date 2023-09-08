@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import MiApi from './components/MiApi'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './App.css';
 
 function App() {
   
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className='container'>
-      <MiApi libroBuscar={libroBuscar}/>
+      <MiApi libroBuscar={libroBuscar} setLibroBuscar={setLibroBuscar}/>
     </div>
   )
 }
