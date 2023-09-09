@@ -4,7 +4,7 @@ import axios from "axios";
 const MiApi = () => {
 
     const [libros,setLibros] = useState([]);
-    const baseURL = "https://www.googleapis.com/books/v1/volumes?q=react";
+    const baseURL = "https://www.googleapis.com/books/v1/volumes?q=react&maxResults=40";
 
 
     const llamadaApi = () => {
